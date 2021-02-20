@@ -1,18 +1,67 @@
+:root {
+  --subtle-bg: rgba(0, 0, 0, .05);
+  --subtle-whilte: rgba(255, 255, 255 , 0.2);
+}
+
 body {
-  margin: 2rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  max-width: 30rem;
+  margin: 2rem auto;
+  background-color: rgb(250, 248, 245);
+  color: darkslategray;
 }
 
-* {
-  padding: 0.5em 0.3em;
-  margin: 0;
+input, textarea {
+  font-family: 'Merriweather', serif;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  background-color: var(--subtle-bg);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+input::placeholder, textarea::placeholder {
+  color: slategray;
+}
+
+input:focus, textarea:focus {
+  background-color: var(--subtle-whilte);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.app__field-control {
+  margin: 1rem 0;
+}
+
+.app__field-control strong {
+  font-size: .8em;
+}
+
+.app__submit {
+  outline: none;
+  border: none;
+  padding: .75rem 3rem;
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+  background-color: var(--subtle-bg);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.app__submit:focus, .app__submit:hover {
+  border-bottom: 1px solid teal;
+}
+
+.app__success {
+  font-size: 1rem;
+}
+
+.app__success em {
+  font-size: 1.5em;
+  color: teal ;
 }
