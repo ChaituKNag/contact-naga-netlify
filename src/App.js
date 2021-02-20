@@ -87,7 +87,7 @@ function App() {
                 />
               </label>
             </div>
-            <div className="app__field-control">
+            {/* <div className="app__field-control">
               <label htmlFor="title">
                 <strong>subject</strong>
                 <br />
@@ -99,7 +99,7 @@ function App() {
                   onChange={handleChange}
                 />
               </label>
-            </div>
+            </div> */}
             <div className="app__field-control">
               <label htmlFor="email">
                 <strong>email</strong>
